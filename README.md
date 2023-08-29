@@ -1,66 +1,66 @@
-# Projet Programmation Web 2 - Portfolio  
+# Web Programming 2 - Portfolio  
 
-Projet de développement web réalisé dans le cadre de l'UE "Programmation Web 2" pour la L2S4 Informatique à l'UFR Mathématique et Informatique Strasbourg.  
+Web development project done for the course "Web Programming 2" during my second year of Bachelor in computer science at the University of Strasbourg
 
-## Pour commencer  
+## Getting started 
 
-### Démarrage  
+### Launch project
 
-- **Pour lancer le projet, taper cette commande dans le terminal:**  
+- **To launch the project, type this command in the terminal:**  
 
 ```
 php -S localhost:8000  
 ```
 
-## Implémentation
+## Implementation
 
-### Partie serveur
+### Server side
 
-+ Formulaire GET (barre de recherche) et POST (formulaire de commmentaires)
-+ Vérification des données des formulaires avant envoi avec javascript et PHP
-+ Prise en charge de la faille XSS
-+ Utilisation de PDO
-+ Création d'une table via SQLite
-+ Insertion dans la base de données via PHP -> PDO -> SQLite
-+ Prise en charge de la faille "injection SQL" avec la fonction query et prepare
-+ Extraction de données de la base de données
-+ Utilisation de classes PHP 
++ GET form (search bar) and POST form (comment form)
++ Verification of form data before sending with javascript and PHP
++ Support for XSS flaw
++ Use of PDOs
++ Table creation via SQLite
++ Insertion into the database via PHP -> PDO -> SQLite
++ Support for "SQL injection" flaw with query and prepare function
++ Data extraction from database
++ Use of PHP classes
 
-### Partie client 
+### Client side
 
-+ Système de traduction pour les éléments statiques
-+ Responsive design (smartphone, tablette et ordinateur)
-+ Requête AJAX (bouton voir plus de projets)
-+ Gérer les éléments redondants avec PHP (barre de navigation, footer)
-+ Respect des règles d'accessibilité numériques
-+ Utilisation de balises HTML nommées
-+ Utilisation de sélecteurs CSS
-+ Respect de l'architecture d'un projet web 
++ Translation system for static elements
++ Responsive design (smartphone, tablet and computer)
++ AJAX request (see more projects button)
++ Manage redundant elements with PHP (navigation bar, footer)
++ Compliance with digital accessibility rules
++ Use of named HTML tags
++ Use of CSS selectors
++ Web project architecture compliance
 
-## Aperçu visuel
+## Visual overview
 
 ### Responsive design
 
-- **Version sur tablette**
+- **Tablet version**
 
-![Capture_d_écran_du_2023-06-12_22-09-10](/uploads/81e79b90fc43126fb8f27816a6c2fbd0/Capture_d_écran_du_2023-06-12_22-09-10.png)
+![1](https://github.com/jandreolli/portfolio-website/assets/95167842/1d58baef-461d-4df0-a12a-a1672fa1b2bc)
 
-- **Version sur téléphone portable**
+- **Smartphone version**
 
-![Capture_d_écran_du_2023-06-12_22-08-01](/uploads/6a1a75a1451d10ba32df63989a0c600c/Capture_d_écran_du_2023-06-12_22-08-01.png)
+![2](https://github.com/jandreolli/portfolio-website/assets/95167842/48b1a772-b949-4b7b-bfcb-c63d5cf19205)
 
-### Formulaires
+### Forms
 
-- **Formulaire POST**
+- **POST form**
 
-![Capture_d_écran_du_2023-06-12_22-11-52](/uploads/c2ff2f8f36a04fa6eb5a072223700d9d/Capture_d_écran_du_2023-06-12_22-11-52.png)
+![3](https://github.com/jandreolli/portfolio-website/assets/95167842/5a561f1a-68f3-4c83-9e5d-768514153b92)
 
-- **Formulaire GET**
+- **GET form**
 
-![Capture_d_écran_du_2023-06-12_22-49-51](/uploads/caf9eb1a78d33a1634f83f87b8c10411/Capture_d_écran_du_2023-06-12_22-49-51.png)
+![4](https://github.com/jandreolli/portfolio-website/assets/95167842/ce9e954b-ce5f-46e0-afb0-2e1cd3d8257f)
 
 
-## Auteurs  
+## Author 
 
 **Justine Andreolli**  _alias_ [@jandreolli](https://git.unistra.fr/jandreolli)  
  
