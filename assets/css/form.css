@@ -1,0 +1,143 @@
+#comments_container {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 742px) {
+    #comments_container {
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+}
+
+#comments_container h1 {
+    color: rgb(148, 207, 211);
+    text-align: center;
+    font-family: var(--title-font-family);
+}
+
+form article {
+    display: block;
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 742px) {
+    form article {
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        /* largeur entre les colonnes */
+        grid-gap: 10px;
+        /* 20px haut et bas */
+        margin: 20px 0;
+    }
+}
+
+form article input,
+form article textarea {
+    /* inset = profondeur */
+    border: 1px inset black;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+}
+
+@media screen and (min-width: 742px) {
+
+    form article input,
+    form article textarea {
+        /* inset = profondeur */
+        border: 1px inset black;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        outline: none;
+    }
+}
+
+
+form article label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(148, 207, 211);
+    font-family: var(--title-font-family);
+}
+
+form article input.error,
+form article textarea.error {
+    border: 1px inset rgb(216, 5, 5);
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+form article label.error {
+    color: red;
+}
+
+form button {
+    border: 1px outset cornflowerblue;
+    background-color: rgb(0, 255, 55);
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    font-family: var(--title-font-family);
+    font-size: 20px;
+}
+
+form button:hover {
+    background-color: rgb(42, 146, 64);
+}
+
+form button:active {
+    background-color: #54bd73;
+    box-shadow: none;
+    outline: none;
+}
+
+section>section {
+    margin-top: 20px;
+}
+
+section>section article {
+    border: 1px solid black;
+    background-color: #3757c2;
+    border-radius: 15px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+section>section article p:first-child {
+    font-size: 0.9em;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
+#search_main {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+#search_main form article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search_main label {
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-family: var(--title-font-family);
+}
+
+#search_main form article input {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 20px;
+}

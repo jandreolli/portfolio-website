@@ -1,0 +1,199 @@
+/*** HEADER ***/
+header section {
+    height: 145.5px;
+    position: relative;
+    /* = garde sa place mais peut se déplacer avec left,..; static = par défaut (fait rien) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header section img:first-child {
+    height: 145.5px;
+    width: 100%;
+    /* rogne l'image qui dépasse de la zone */
+    object-fit: cover;
+    z-index: 0;
+}
+
+@media all and (min-width: 742px) {
+
+    header section,
+    header section img:first-child {
+        height: 300px;
+    }
+}
+
+@media all and (min-width: 1140px) {
+
+    header section,
+    header section img:first-child {
+        height: 350px;
+    }
+}
+
+header section img:last-child {
+    /* sort l'img de de son flow + on spécifie où avec left,etc. son parent doit être en pos relative */
+    position: absolute;
+    height: 70px;
+    z-index: 1;
+}
+
+@media all and (min-width: 742px) {
+    header section img:last-child {
+        height: 150px;
+    }
+}
+
+@media all and (min-width: 1140px) {
+    header section img:last-child {
+        height: 180px;
+    }
+}
+
+/** SECTION **/
+main h1 {
+    color: white;
+    font-family: var(--title-font-family);
+    font-size: 40px;
+    font-weight: 400;
+}
+
+main nav {
+    /* créer marges automatiquement pour se mettre au centre */
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* espace entre lignes */
+    row-gap: 33px;
+    justify-items: center;
+}
+
+@media all and (min-width: 742px) {
+    main nav {
+        width: 742px;
+        grid-template-columns: repeat(2, 1fr);
+        /* espace entre colonnes */
+        grid-gap: 54px;
+    }
+}
+
+@media all and (min-width: 1140px) {
+    main nav {
+        width: 1140px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+main nav h1 {
+    margin: 33.5px 0 0 0;
+}
+
+@media all and (min-width: 742px) {
+    main nav h1 {
+        margin: 45px 0;
+        /* le titre au dessus des cases prend toute la ligne */
+        grid-column: 1/3;
+    }
+}
+
+@media all and (min-width: 1140px) {
+    main nav h1 {
+        /* h1 prendra la place du début de la colonne 1 au début de la colonne 4 */
+        grid-column: 1/4;
+    }
+}
+
+/* nav > article : article directement enfant de nav */
+main nav>article {
+    width: 344px;
+    height: 510px;
+    background-color: rgba(87, 161, 190, 0.2);
+    color: white;
+    border-radius: 20px;
+}
+
+main nav>article header,
+main nav>article img {
+    width: 100%;
+    height: 194px;
+}
+
+main nav>article img {
+    /* on arrondi bord haut gauche et droite */
+    border-radius: 20px 20px 0 0;
+    /* pour que l'image s'affiche correctement --> rogne */
+    object-fit: cover;
+}
+
+main nav>article section {
+    padding: 15px;
+}
+
+main nav>article section h2 {
+    font-family: var(--title-font-family);
+    font-weight: 400;
+    font-size: 27px;
+    margin: 5px;
+}
+
+main nav>article section h3 {
+    font-family: var(--title-font-family);
+    font-size: 12px;
+    padding: 5px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgb(192, 154, 243);
+}
+
+main nav>article section p {
+    font-family: var(--title-font-family);
+    margin: 0;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+main nav>article footer a {
+    color: rgb(145, 191, 218);
+    font-family: var(--title-font-family);
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    padding: 10px;
+}
+
+main nav>article footer a span {
+    background-color: #222b3d;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+main nav>article footer a span:hover {
+    background-color: rgb(101, 49, 114);
+}
+
+main button {
+    display: block;
+    margin: 20px auto;
+    border: 1px outset rgb(93, 19, 136);
+    background-color: rgb(153, 0, 255);
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    font-family: var(--title-font-family);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+main button:hover {
+    background-color: rgb(100, 174, 204);
+}
+
+main button:active {
+    background-color: #54bd73;
+    box-shadow: none;
+    outline: none;
+}
